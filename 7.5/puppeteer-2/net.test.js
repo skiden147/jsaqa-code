@@ -45,7 +45,7 @@ describe("Cinema tests", () => {
 		await clickElement(page, "body > main > section:nth-child(1) > div.movie-seances__hall > ul > li:nth-child(3) > a");
 		await clickElement(page, "body > main > section > div.buying-scheme > div.buying-scheme__wrapper > div:nth-child(5) > span.buying-scheme__chair.buying-scheme__chair_vip.buying-scheme__chair_taken");
 		await clickElement(page, reservationButtonSel);
-		const actual = await getText(page, "body > main > section > div.buying__info > div > h2");
+		const actual = await getText(page, "h2");
 		expect(actual).toContain("Зверополис")
 	});
 
